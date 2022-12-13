@@ -1,16 +1,16 @@
-- const link1 = [
+- const education = [
 - {title: 'Курсы'},
 - {title: 'Вебинары'},
 - {title: 'Тренажеры'},
 - {title: 'Воркшопы'}]
 
-- const link2 = [
+- const about = [
 - {title: 'О платформе'},
 - {title: 'Преподаватели'},
 - {title: 'Тарифы'},
 - {title: 'Отзывы'}]
 
-- const link3 = [
+- const contacts = [
 - {title: 'Связаться с нами'},
 - {title: 'Консультация'},
 - {title: 'Реквизиты'},
@@ -32,15 +32,15 @@
                 img.icon(src='../assets/images/inst.png')
         .footer__column 
             .text.footer__text-big Обучение       
-            each item in link1
+            each item in education
                 +link(item.title)
         .footer__column
             .text.footer__text-big О нас      
-            each item in link2
+            each item in about
                 +link(item.title) 
         .footer__column 
             .text.footer__text-big Контакты       
-            each item in link3
+            each item in contacts
                 +link(item.title)
         .footer__column-right
             .text.footer__text-big Возникли вопросы?
