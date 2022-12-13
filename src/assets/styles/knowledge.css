@@ -1,0 +1,56 @@
+.knowledge {
+  margin-top: 120px;
+  padding-top: 1px;
+  height: 556px;
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #10B582;
+  display: flex;
+  justify-content: space-between;
+}
+.knowledge__button {
+  margin-top: 50px;
+  margin-left: 135px;
+}
+.knowledge__column {
+  width: 50%;
+}
+.subtitle {
+  font-family: Raleway;
+  font-size: 58px;
+  line-height: 70px;
+}
+.subtitle_white {
+  color: #FDFDFD;
+}
+.subtitle_black {
+  color: #353A5A;
+}
+.knowledge__subtitle {
+  margin-top: 119px;
+  margin-left: 135px;
+}
+.text {
+  font-family: Raleway;
+  color: #353A5A;
+}
+.text_white {
+  color: #FDFDFD;
+}
+.knowledge__text {
+  width: 478px;
+  margin-top: 20px;
+  margin-left: 135px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.knowledge__image {
+  position: relative;
+  margin-top: -256px;
+  margin-left: 45px;
+}
+.knowledge__dash-line {
+  margin-top: 120px;
+  margin-left: 15px;
+}

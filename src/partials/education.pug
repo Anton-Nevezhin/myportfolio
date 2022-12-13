@@ -1,0 +1,21 @@
+mixin list(image, title, text)
+    .list
+        .list__cont
+            .list__flex
+                img.list__image(src=image)
+                .list__title=title
+            .list__text=text
+
+.education
+    .subtitle.subtitle_black.education__subtitle На курсе вы научитесь
+
+
+    - const lists = [{image: '../assets/images/program-1.png', n: 'Анимировать объекты', m: 'Узнаете принципы создания инфографики, персонажной 2D флэт-анимации.'},
+    - {image: '../assets/images/program-2.png', n: 'Работать с кадром', m: 'Изучите основные принципы анимации и работы с объектами, их движением в кадре.'},
+    - {image: '../assets/images/program-3.png', n: 'Работать в After Effects', m: 'Научитесь реализовывать ваши идеи с помощью популярной программы для анимации'},
+    - {image: '../assets/images/program-4.png', n: 'Работать со звуком', m: 'Освоите инструменты работы, сможете редактировать музыку в своем проекте.'}]
+    .education__columns
+        each i in lists
+          +list(i.image, i.n, i.m)
+
+    button.button.education__button Программа курса
