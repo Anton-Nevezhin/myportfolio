@@ -2,25 +2,14 @@ doctype html
 html
   head
     meta(charset="utf8")
-    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Raleway")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Inconsolata|Open+Sans")
   body
-    .wrapper
-
-
-
-
-
-      include ../partials/header-1.pug
-      include ../partials/slider.pug
-      include ../partials/profit.pug     
-      include ../partials/knowledge.pug
-      include ../partials/education.pug
-      include ../partials/discount.pug
-      include ../partials/questions-card.pug
-      include ../partials/questions.pug
-      include ../partials/link.pug
-      include ../partials/footer.pug
-      include ../partials/menu.pug
-
-
-        
+    div
+      include ../partials/header.pug
+      p.
+        This is a simple boilerplate for making multi-page website with the power of
+        <a href="https://webpack.js.org">webpack</a>,
+        <a href="https://pugjs.org">pug</a> and
+        <a href="https://lesscss.org">LESS</a>
+      p.
+        Goto <a href="page2.html">Page 2</a>

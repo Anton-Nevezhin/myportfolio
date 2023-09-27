@@ -1,16 +1,45 @@
-@import './base.less';
-@import './header.less';
-@import './card.less';
-@import './cards.less';
-@import './knowledge.less';
-@import './profit.less';
-@import './button.less';
-@import './education.less';
-@import './discount.less';
-@import './questions.less';
-@import './questions-card.less';
-@import './link.less';
-@import './footer.less';
-@import './slider.less';
-@import './header-1.less';
+@link-color: #03a9f4;
 
+body {
+  width: 500px;
+  margin: 0 auto;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: @link-color;
+}
+
+.webpack {
+  display: block;
+  width: 33%;
+  margin: 32px auto 0;
+}
+
+h1 {
+  font-size: 1.5em;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .octocat {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url(../images/octocat.png);
+    background-size: contain;
+  }
+
+  code {
+    margin-left: 16px;
+    font-family: 'Inconsolata', monospace;
+  }
+}
+
+p {
+  text-align: center;
+}

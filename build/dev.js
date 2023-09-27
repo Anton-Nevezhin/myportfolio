@@ -30,17 +30,10 @@ function fileChangedHandler () {
   })
 }
 
-//const watcher = chokidar.watch([
-//  path.join(__dirname, '../src/views/**/*'),
-//  path.join(__dirname, '../src/scripts/**/*')
-//])
-
 const watcher = chokidar.watch([
   path.join(__dirname, '../src/views/**/*'),
   path.join(__dirname, '../src/scripts/**/*')
-], {usePolling: true})
-
-console.log('************', path.join(__dirname, '../src/views/**/*'), '\n')
+])
 
 watcher.on('add', fileChangedHandler).on('unlink', fileChangedHandler)
 fileChangedHandler()
